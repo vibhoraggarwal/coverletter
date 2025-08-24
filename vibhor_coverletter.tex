@@ -1,0 +1,87 @@
+% Cover letter using letter.cls
+\documentclass[a4paper,10 pt]{letter} % Uses 10pt
+\usepackage[a4paper, top=2cm, bottom=3cm]{geometry}  % Set vertical margins here
+\usepackage{hyperref}
+\usepackage{tikz}
+\usepackage{graphics}
+\usepackage{xspace}
+\usepackage{svg}
+%\topmargin=-1in    % Make letterhead start 1 inch from top of page 
+%\textheight=8in  % text height can be bigger for a longer letter
+%\oddsidemargin=0pt % leftmargin is 1 inch
+%\textwidth=6.5in   % textwidth of 6.5in leaves 1 inch for right margin
+
+% TODO: Date of sending
+\date{\today} % Uncomment for today
+\signature{\vspace{-1.5 cm}Vibhor Aggarwal} % name for signature 
+
+\begin{document}
+\renewcommand{\enclname}{Enclosed}
+\longindentation=0pt                       % needed to get closing flush left
+\let\raggedleft\raggedright                % needed to get date flush left
+ 
+ 
+\begin{letter}
+% TODO: Enter the name and address of the receiver
+{Centre for AI for Assistive Autonomy team, \\
+Edinburgh
+}
+\begin{center}
+{\large\bf Vibhor Aggarwal} 
+\end{center}
+\medskip\hrule height 1pt
+\begin{center}
+{Robotics and Automotive engineer  \\  vibhorag24@gmail.com\\ (+49)17659896222} 
+\end{center} \vfill % forces letterhead to top of page
+
+\textbf{Subject}: Application for Research Software Engineer \\ \\
+ %TODO: Enter the name after salutation
+\opening{Dear team,} 
+
+ %TODO: Enter the nameof company and position
+I am writing to express my interest in contributing to Centre for AI for Assistive Autonomy team's work as Research Software Engineer.
+
+As I plan my next steps after several years in Germany, I have been thoughtfully considering where I can make the most meaningful impact.
+
+I am particularly drawn to your lab because of your bold vision to bring mobility and healthcare together. This mission resonates deeply with me, both as an engineer and as someone committed to advancing indigenous innovation.
+
+I am currently a software engineer at Bosch Group (ETAS) with more than 6 years of experience in Automotive and robotics. I completed my bachelor’s degree as a mechanical engineer with a minor in Applied Mathematics from the Indian Institute of Technology (IIT) Kanpur, India, and an M.Sc. in Automotive Engineering from RWTH Aachen, Germany.
+
+I have worked for international robotics and automotive research labs and companies in Germany, India, and Italy. You can find more details on the attached \href{https://vibhoraggarwal.github.io/files/VibhorResume_en.pdf}{resume}. 
+
+Since my undergraduate studies, where I had the opportunity to work on an off-road vehicle, I have developed a deep passion for the dynamics of machine systems. Over time and alongside my Master's degree, I have gained significant expertise in automation, humanoid robotics, and ADAS systems. During my tenure at ETAS/Bosch, I collaborated with cross-functional teams and worked closely with stakeholders and customers to drive the success of ADAS technologies like simulation models and middleware.
+
+Drawing on my experience, I have developed expertise in the following domains, among others:
+\begin{itemize}
+  \item Systems integration
+  \item Systems design 
+  \item (Rapid) prototyping of systems
+  \item Control engineering
+  \item Agile software development
+  
+\end{itemize}
+
+I am currently based in Germany but will be open to relocate. I am looking for a position of 3 to 6 months but would be open for discussion.
+% TODO: Mention the additional questions being asked from you in the position information, like visa requirements, salary requirements, nationality
+% Following are personal details asked in the job posting:\\ 
+%\textbf{Nationality}: Indian\\
+%\textbf{Visa requirements}: I already have a study visa in Germany, but I would require a visa to work in Belgium as well.
+
+Thank you for taking the time to consider my application. I would be happy to provide any further information and be available for discussion.
+
+I look forward to hearing from you.
+
+\closing{Sincere regards,\\
+\begin{figure}
+  \centering
+  \includesvg[width=1.1cm]{ Vibhor_Sign.svg}
+\end{figure}
+\\} 
+
+%SkypeID: vibhoragg\\
+Website: \href{https://vibhoraggarwal.github.io/}{vibhoraggarwal.github.io}
+%TODO: Change the list of documents enclosed
+% TODO 2: Exchange the words: Curriculum Vitae/ Resume
+	% Enclosures
+\end{letter}
+\end{document}

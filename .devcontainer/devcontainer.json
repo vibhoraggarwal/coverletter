@@ -1,0 +1,26 @@
+{
+    "name": "LaTeX DevContainer",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "settings": {
+        "latex-workshop.latex.tools": [
+            {
+                "name": "pdflatex",
+                "command": "pdflatex",
+                "args": ["-interaction=nonstopmode", "-synctex=1", "%DOC%"]
+            }
+        ],
+        "latex-workshop.latex.recipes": [
+            {
+                "name": "pdflatex",
+                "tools": ["pdflatex"]
+            }
+        ]
+    },
+    "extensions": [
+        "James-Yu.latex-workshop"
+    ],
+    "remoteUser": "vscode",
+    "workspaceFolder": "/workspace"
+}
