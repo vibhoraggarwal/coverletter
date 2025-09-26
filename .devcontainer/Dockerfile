@@ -13,7 +13,7 @@ USER $USERNAME
 WORKDIR /workspace
 
 # Add alias to the .bashrc of the non-root user
-RUN echo "alias gen_tex_doc='pdflatex -shell-escape vibhor_coverletter.tex'" >> /home/${USERNAME}/.bashrc && \
+RUN echo "alias gen_tex_doc='pdflatex -shell-escape'" >> /home/${USERNAME}/.bashrc && \
     chown ${USERNAME}:${USERNAME} /home/${USERNAME}/.bashrc
 
 CMD ["bash"]
