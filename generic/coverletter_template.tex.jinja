@@ -1,0 +1,60 @@
+\documentclass[a4paper,10pt]{letter}
+\usepackage[a4paper, top=2cm, bottom=3cm]{geometry}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{svg}
+\usepackage{float}
+
+% --------------------------
+% VARIABLES (Jinja placeholders)
+% --------------------------
+\newcommand{\RecipientName}{ {{-recipient_name-}} }
+\newcommand{\RecipientDept}{ {{-recipient_dept-}} }
+\newcommand{\RecipientInstitution}{ {{-recipient_institution-}} }
+\newcommand{\Position}{ {{-position-}} }
+\newcommand{\Company}{ {{-company-}} }
+\newcommand{\LetterDate}{ {{-letter_date-}} }
+\newcommand{\YourName}{ {{-your_name-}} }
+\newcommand{\YourTitle}{ {{-your_title-}} }
+\newcommand{\YourEmail}{ {{-your_email-}} }
+\newcommand{\YourPhone}{ {{-your_phone-}} }
+\newcommand{\YourResumeURL}{ {{-your_resume_url-}} }
+\newcommand{\YourSignatureSVG}{ {{-your_signature_svg-}} }
+\newcommand{\Location}{ {{-location-}} }
+\newcommand{\MaxDuration}{ {{-max_duration-}} }
+
+\date{\LetterDate}
+\signature{\vspace{-1.5cm}\YourName}
+
+\begin{document}
+\longindentation=0pt
+\let\raggedleft\raggedright
+
+\begin{letter}{\RecipientDept, \\ \RecipientInstitution}
+
+\begin{center}
+{\large\bf \YourName}
+\end{center}
+\medskip\hrule height 1pt
+\begin{center}
+\YourTitle \\
+\YourEmail \\
+\YourPhone
+\end{center}
+\vfill
+
+\textbf{Subject}: Application for \Position \\ \\
+\opening{Dear \RecipientName,}
+
+I am writing to express my interest in contributing to the \textit{\Company} as a \textit{\Position}.
+
+I am currently based in \Location\ but open to relocation. I am looking for a short-term position of up to \MaxDuration.
+
+\closing{Sincere regards, \\
+\includesvg[width=1.1cm]{\YourSignatureSVG}
+}
+
+Website: \href{https://vibhoraggarwal.github.io/}{vibhoraggarwal.github.io}
+
+\end{letter}
+\end{document}
