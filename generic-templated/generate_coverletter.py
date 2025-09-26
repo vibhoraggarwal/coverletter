@@ -18,7 +18,11 @@ template = env.get_template("coverletter_template.tex.jinja")
 # 3. Render template
 # -----------------------
 output_tex = template.render(**data)
-output_filename = "vibhor_coverletter.tex"
+recipient_institution = data.get("recipient_institution")
+# If the value itself may contain spaces, normalize that
+if recipient_institution is not None:
+    recipient_institution = recipient_institution.lower().replace(" ", "_")
+output_filename = f"coverletter_vibhor_aggarwal_{recipient_institution}.tex"
 
 with open(output_filename, "w") as f:
     f.write(output_tex)
