@@ -14,17 +14,12 @@
 \newcommand{\Position}{ {{-position-}} }
 \newcommand{\Company}{ {{-company-}} }
 \newcommand{\LetterDate}{ {{-letter_date-}} }
-\newcommand{\YourName}{ {{-your_name-}} }
-\newcommand{\YourTitle}{ {{-your_title-}} }
-\newcommand{\YourEmail}{ {{-your_email-}} }
-\newcommand{\YourPhone}{ {{-your_phone-}} }
 \newcommand{\YourResumeURL}{ {{-your_resume_url-}} }
-\newcommand{\YourSignatureSVG}{ {{-your_signature_svg-}} }
 \newcommand{\Location}{ {{-location-}} }
 \newcommand{\MaxDuration}{ {{-max_duration-}} }
 
 \date{\LetterDate}
-\signature{\vspace{-1.5cm}\YourName}
+\signature{\vspace{-1.5 cm}Vibhor Aggarwal} % name for signature
 
 \begin{document}
 \longindentation=0pt
@@ -33,25 +28,41 @@
 \begin{letter}{\RecipientDept, \\ \RecipientInstitution}
 
 \begin{center}
-{\large\bf \YourName}
+{\large\bf Vibhor Aggarwal}
 \end{center}
 \medskip\hrule height 1pt
 \begin{center}
-\YourTitle \\
-\YourEmail \\
-\YourPhone
-\end{center}
-\vfill
+{Robotics and Automotive engineer  \\  vibhorag24@gmail.com\\ (+49)17659896222}
+\end{center} \vfill % forces letterhead to top of page
 
 \textbf{Subject}: Application for \Position \\ \\
 \opening{Dear \RecipientName,}
 
 I am writing to express my interest in contributing to the \textit{\Company} as a \textit{\Position}.
 
+As I consider the next phase of my career after several years in Germany, I have been reflecting on where I can contribute the most meaningfully. I am interested in your vision of RL/ML and imitation learning in robotics. With AI capturing our world digitally, it will not be time when it strikes the physical world of robotics. I would like to be part of its impact on the industry.
+
+I am currently a software engineer at ETAS (Bosch group) with over six years of experience in automotive and robotics. I completed my bachelor's degree as a mechanical engineer with a minor in applied mathematics from the Indian Institute of Technology (IIT) Kanpur, India, and a master's degree in automotive engineering from RWTH Aachen, Germany. I have worked for international robotics and automotive research laboratories and companies in Germany, India, and Italy. You can find more details on the attached \href{https://vibhoraggarwal.github.io/files/VibhorResume_en.pdf}{resume}.
+
+Since my undergraduate studies, where I had the opportunity to work on an off-road vehicle, I have developed a deep passion for the dynamics of machine systems. I have gained significant experience in automation, humanoid robotics, and ADAS systems. During my tenure at ETAS/Bosch, I collaborated with cross-functional teams and worked closely with stakeholders and customers to drive the success of ADAS technologies, such as simulation models and middleware.
+
+Drawing on my experience, I have worked and am fluent in the following domains among others which might be helpful for the position:
+\begin{itemize}
+  \item System Design \& Integration
+  \item (Rapid) prototyping of systems
+  \item Control engineering
+  \item Agile software development
+  \item Robot dynamics and motion
+  \item Hands on experience with \href{https://icub.iit.it/}{iCub Humanoid robot}
+  \item Continuous delivery systems
+\end{itemize}
+
 I am currently based in \Location\ but open to relocation. I am looking for a short-term position of up to \MaxDuration.
 
+I look forward to hearing from you.
+
 \closing{Sincere regards, \\
-\includesvg[width=1.1cm]{\YourSignatureSVG}
+\includesvg[width=1.1cm]{vibhor_sign.svg}
 }
 
 Website: \href{https://vibhoraggarwal.github.io/}{vibhoraggarwal.github.io}
