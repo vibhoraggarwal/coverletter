@@ -1,13 +1,13 @@
 {
-    "recipient_name": "Prof. Hyungpil Moon",
-    "recipient_dept": "Department of Intelligent Robotics",
-    "recipient_institution": "SKKU",
-    "position": "Gastwissenschaftler für Robotik",
+    "recipient_name": "Marion Hofmann",
+    "recipient_dept": "",
+    "recipient_institution": "Motor AI",
+    "position": "Softwareentwickler Motion Planning \\& Control",
     "letter_date": "\\today",
-    "whose_vision": "eure",
-    "what_vision": "Intelligente Robotertechnik",
-    "what_drive": "Mit KI, die unsere Welt digital erfasst, wird es nicht lange dauern, bis sie die physische Welt der Robotik erobert. Ich möchte Teil des Einflusses auf die Industrie sein.",
+    "whose_vision": "Motor AI's",
+    "what_vision": "sicherer, schneller und adaptiver autonomer Fahrzeuge",
+    "what_drive": "Mit KI, die unsere Welt digital erfasst, wird es nicht lange dauern, bis sie die physische Welt der Fahrzeug erobert. Ich möchte Teil des Einflusses auf die Industrie sein.",
     "your_resume_url": "https://vibhoraggarwal.github.io/files/VibhorResume_en.pdf",
-    "location": "Deutschland",
-    "what_seeked": "kurzfristige Position von bis zu 6 Monaten"
+    "location": "Stuttgart",
+    "what_seeked": "Vollzeitstelle"
 }
